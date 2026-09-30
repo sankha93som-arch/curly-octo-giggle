@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Northstar Store</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">Northstar</div>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">New Arrivals</a>
+          <a href="#">Accessories</a>
+          <a href="#">Sale</a>
+        </nav>
+        <button class="nav-button">Cart (1)</button>
+      </div>
+    </header>
+
+    <main class="container page">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">New season essential</p>
+          <h1>Premium Everyday Backpack</h1>
+          <p class="subtitle">
+            Built for commute, travel, and daily carry — durable materials, smart
+            compartments, and lightweight comfort.
+          </p>
+          <div class="price-row">
+            <span class="price">₹1,499</span>
+            <span class="badge">Free shipping</span>
+          </div>
+          <div class="actions">
+            <button class="primary" id="buyNowButton" type="button">Buy now</button>
+            <button class="secondary" type="button">Add to cart</button>
+          </div>
+          <ul class="feature-list">
+            <li>Water-resistant fabric</li>
+            <li>15" laptop sleeve</li>
+            <li>3-year warranty</li>
+          </ul>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <span>Backpack</span>
+          </div>
+          <div class="product-meta">
+            <div class="meta-top">
+              <h2>Northstar Traverse</h2>
+              <span>4.8 ★</span>
+            </div>
+            <p>Minimal design, premium finish, and all-day versatility.</p>
+            <div class="meta-row">
+              <strong>₹1,499</strong>
+              <small>Inclusive of taxes</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="checkout-panel">
+        <div class="panel-header">
+          <h2>Checkout</h2>
+          <span>Sandbox mode</span>
+        </div>
+
+        <form id="checkoutForm">
+          <div class="form-grid">
+            <div class="field">
+              <label for="customerName">Full name</label>
+              <input id="customerName" type="text" value="Test Customer" required />
+            </div>
+            <div class="field">
+              <label for="customerPhone">Phone</label>
+              <input id="customerPhone" type="tel" value="9999999999" required />
+            </div>
+            <div class="field field-wide">
+              <label for="customerEmail">Email</label>
+              <input id="customerEmail" type="email" value="test@example.com" required />
+            </div>
+          </div>
+
+          <div class="summary-box">
+            <div>
+              <span>Item</span>
+              <strong>Northstar Traverse</strong>
+            </div>
+            <div>
+              <span>Amount</span>
+              <strong>₹1,499.00</strong>
+            </div>
+          </div>
+
+          <button class="primary checkout-button" type="submit">
+            Pay with Cashfree (Sandbox)
+          </button>
+        </form>
+      </section>
+
+      <section class="response-panel">
+        <h3>Order status</h3>
+        <div id="status" class="status">Ready to pay.</div>
+        <pre id="response">No request sent yet.</pre>
+      </section>
+    </main>
+
+    <script src="https://sdk.cashfree.com/js/v3/cashfree.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
